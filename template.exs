@@ -37,13 +37,8 @@ Twenty TwentyOne TwentyTwo TwentyThree TwentyFour TwentyFive
     input = File.read!("input/#{day_n}.txt")
     # input = File.read!("input/test.txt")
 
-    input
-    |> #{word}.part_one()
-    |> IO.inspect(label: "part 1")
-
-    # input
-    # |> #{word}.part_two()
-    # |> IO.inspect(label: "part 2")
+    input |> #{word}.part_one() |> IO.inspect(label: "part 1")
+    # input |> #{word}.part_two() |> IO.inspect(label: "part 2")
     """
 
   File.touch("input/#{day_n}.txt")
